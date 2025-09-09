@@ -7,8 +7,10 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- For using daisyui and tailwind -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   
    <link rel="stylesheet" href="styles/style.css">
    
@@ -16,8 +18,43 @@
     
 </head>
 <body>
+    <header class="bg-[#15803D]">
+        <div class="navbar  container mx-auto w-7xl h-[80px]">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <!-- <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div> -->
+      <!-- <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>Item 1</a></li>
+        <li>
+          <a>Parent</a>
+          <ul class="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </li>
+        <li><a>Item 3</a></li>
+      </ul> -->
+    </div>
+    <a class="">Green Earth</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>About</a></li>
+      <li><a>Gallery</a></li>
+      <li><a>Plant a Tree</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="btn btn-primary rounded-[20px] bg-[#FACC15] text-[#15803D] ">Plant a Tree</a>
+  </div>
+</div>
+    </header>
     <!-- FOR NAVBAR -->
-     <div class="bg-[#15803D]">
+     <!-- <div class="bg-[#15803D]">
     <div class="container mx-auto w-7xl h-[80px]">
      <div class="flex justify-between items-center h-[full] p-4 ">
         <div>
@@ -35,7 +72,7 @@
         </div>
      </div>
      </div>
-     </div>
+     </div> -->
 
      <!-- Banner part -->
       <div class="flex bg-[#CFF0DC] justify-center items-center">
@@ -52,7 +89,57 @@
             <img src="assets/hero-leaf2.png">
         </div>
       </div>
+    
+        <!-- Categories -->
+    <section class="bg-[#d8f4e6] ">
+        <div class="container mx-auto w-7xl">
+        <h2 class="font-bold">Choose Your Trees</h2>
+        <h2 class="ml-5 font-semibold text-[18px]">Categories</h2>
+        <!-- <div id="categories" class="flex flex-col gap-2 p-2"> -->
+            <div class="flex gap-7">
+            <ul id="categories" >
+             
+             </ul>
+             <div id="card-container" class="flex flex-wrap justify-center gap-4 bg-amber-50">
 
+             </div>
+             </div>
+        
+      
+
+        </div>
+        
+    </section>
+
+    
+    <!-- JS will insert category buttons here -->
+</div>
+
+   
+
+
+
+      <!-- OUR CAMPIAGN -->
+       <div class="bg-[#d8f4e6] py-16 px-8">
+        <h1 class="text-center text-3xl font-bold mb-10">About the Campaign</h1>
+        <div class="flex justify-center items-center max-w-5xl mx-auto gap-x-2">
+            <div class="w-2/5 flex justify-center pl-7">
+                <img src="assets/about.png" class="h-[450px] w-[500px]">
+            </div>
+        <div class="w-3/5">
+            <div class="pl-3">
+        <p class="mb-4 text-[#757373] text-[16px] w-[480px]">
+        Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.
+        </p>
+        <ul class="list-disc pl-7 text-[#757373]">
+            <li>Restoration of natural habitats</li>
+            <li>Improvement of air quality</li>
+            <li>Support for local communities</li>
+        </ul>
+        </div>
+    </div>
+        </div>
+       </div>
       <!-- OUR IMPACT -->
      
        <div class="bg-[#CFF0DC] p-10">
@@ -111,6 +198,8 @@
       <div class="bg-[#14532D] text-white flex items-center justify-center p-6">
         <p>© 2025 Green Earth. All Rights Reserved.</p>
       </div>
+      <script src="app.js"></script>
+
     
 </body>
 </html>
