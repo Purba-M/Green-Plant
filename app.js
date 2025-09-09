@@ -42,14 +42,14 @@ const displayplants=(plants)=>{
 plants.forEach(plant=>{
     let imgSrc = plant.image.replace("ibb.co.com", "ibb.co");
     cardcontainer.innerHTML+=`
-    <div class=" p-3 rounded shadow mb-4 w-72">
-    <img src="${imgSrc}" onerror="this.src='https://via.placeholder.com/150'"  class="w-full h-48 object-cover rounded">
+    <div class="flex flex-col gap-3 w-72 bg-white">
+    <img src="${imgSrc}" onerror="this.src='https://via.placeholder.com/150'"  class="w-full h-48 object-cover">
     
-    <h1>${plant.name}</h1>
-    <p>${plant.description}</p>
+    <div class="p-4 mx-auto"><h1 class="text-green-700 font-bold text-[25px]">${plant.name}</h1>
+    <p class="font-300 mt-2 text-blue-400 line-clamp-3">${plant.description}</p>
     <div class="flex justify-between">
-    <p>${plant.category}</p>
-    <p>${plant.price}</p>
+    <p class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs rounded-md text-center mt-2">${plant.category}</p>
+    <p class="mt-2"><i class="fa-solid fa-bangladeshi-taka-sign font-[8px]"></i> ${plant.price}</p></div>
     </div>
      <button class="bg-green-600 hover:bg-green-700 text-white text-sm px-4 py-2 rounded-md w-full">
           Add to Cart
