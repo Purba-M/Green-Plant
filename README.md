@@ -19,3 +19,14 @@
 <li>Commonly used for concise callbacks or inline functions.</li>
 </ul>
 
+<h3>4) How does destructuring assignment work in ES6?</h3>
+<ul>
+<li>Destructuring assignment in ES6 (ECMAScript 2015) is a powerful feature that allows you to extract values from arrays or properties from objects and assign them to distinct variables in a concise and readable way.</li></ul>
+
+<h3>5) Explain template literals in ES6. How are they different from string concatenation?</h3>
+<ul>
+  <li>Template literals are a new way to create strings in ES6 using backticks (`` ` ``). They allow embedding variables and expressions directly inside the string using `${ }`.</li>
+  <li>They support **multi-line strings** without needing `\n`.Easier to read and write compared to `+` concatenation.</li>
+</ul>
+
+
