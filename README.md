@@ -26,7 +26,7 @@
 <h3>5) Explain template literals in ES6. How are they different from string concatenation?</h3>
 <ul>
   <li>Template literals are a new way to create strings in ES6 using backticks (`` ` ``). They allow embedding variables and expressions directly inside the string using `${ }`.</li>
-  <li>They support **multi-line strings** without needing `\n`.Easier to read and write compared to `+` concatenation.</li>
+  <li>They support multi-line strings without needing `\n`.Easier to read and write compared to `+` concatenation.</li>
 </ul>
 
 
