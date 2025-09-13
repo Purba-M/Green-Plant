@@ -80,12 +80,12 @@ const loadPlantsById = (id) => {
 // Display plants in cards
 const displayPlants = (plants, limit) => {
   const plantsToShow = limit ? plants.slice(0, limit) : plants;
-  cardcontainer.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6";
+  cardcontainer.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6";
   cardcontainer.innerHTML = "";
   plantsToShow.forEach(plant => {
     let imgSrc = plant.image.replace("ibb.co.com", "ibb.co");
     cardcontainer.innerHTML += `
-  <div class="bg-white shadow-md rounded-md overflow-hidden w-72 h-[420px] flex flex-col">
+  <div class="bg-white shadow-md rounded-md overflow-hidden  w-full  h-[420px] flex flex-col max-w-sm">
     <!-- Image -->
     <img src="${imgSrc}" onerror="this.src='https://via.placeholder.com/150'" 
          class="w-full h-40 object-cover">
